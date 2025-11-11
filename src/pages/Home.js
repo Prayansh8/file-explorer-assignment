@@ -11,8 +11,6 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TreeItem from '@mui/lab/TreeItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import ViewListIcon from '@mui/icons-material/ViewList';
-import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import fileSystemData from '../data/data.json';
 import FolderPresent from '../components/FolderPresent';
 import { getFolderIcon, getFileIcon } from '../utils/iconFactory';
@@ -99,7 +97,6 @@ export default function Header() {
   const [open, setOpen] = React.useState(true);
   const [currentFolderId, setCurrentFolderId] = React.useState(firstFolder);
   const [selectedFileId, setSelectedFileId] = React.useState(null);
-  const [listView, setListView] = React.useState(true);
 
 
   const ensureExpandedPath = React.useCallback(
@@ -228,9 +225,6 @@ export default function Header() {
               );
             })}
           </Breadcrumbs>
-          <IconButton color="inherit" onClick={() => setListView((prev) => !prev)}>
-            {listView ? <ViewModuleIcon /> : <ViewListIcon />}
-          </IconButton>
         </Toolbar>
       </AppBar>
 
@@ -239,7 +233,6 @@ export default function Header() {
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <FolderPresent
             folder={nodeMap.get(currentFolderId)}
-            listView={listView}
             selectedFileId={selectedFileId}
             onFolderOpen={handleFolderOpen}
             onFileSelect={handleFileSelect}

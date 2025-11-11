@@ -19,6 +19,8 @@ import Chip from '@mui/material/Chip';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { getFolderIcon, getFileIcon } from '../utils/iconFactory';
+import ViewListIcon from '@mui/icons-material/ViewList';
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
 
 const getFolderDetails = (folder) => {
   const children = Array.isArray(folder.children) ? folder.children : [];
@@ -47,10 +49,10 @@ const sortFiles = (files, order) => {
   });
 };
 
-export default function FolderPresent({ folder, listView, selectedFileId, onFolderOpen, onFileSelect }) {
-  const [showDetails, setShowDetails] = useState(true);
+export default function FolderPresent({ folder, selectedFileId, onFolderOpen, onFileSelect }) {
   const [sortOrder, setSortOrder] = useState('desc');
- 
+  const [listView, setListView] = React.useState(true);
+
   const entries = React.useMemo(() => {
     if (!folder || !Array.isArray(folder.children)) {
       return [];
@@ -89,16 +91,13 @@ export default function FolderPresent({ folder, listView, selectedFileId, onFold
       </Stack>
 
       <FormGroup row sx={{ mb: 2, alignItems: 'center' }}>
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={showDetails}
-              onChange={(event) => setShowDetails(event.target.checked)}
-            />
-          }
-          label="Show Details"
-        />
-        <Box sx={{ ml: 2, display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ mr: 1, display: 'flex', alignItems: 'center' }}>
+          <IconButton color="inherit" onClick={() => setListView((prev) => !prev)}>
+            {listView ? <ViewModuleIcon /> : <ViewListIcon />}
+          </IconButton>
+          <Typography variant="body2" color="text.secondary">{listView ? "Grid" : "Table"}</Typography>
+        </Box>
+        <Box sx={{ ml: 1, display: 'flex', alignItems: 'center' }}>
           <Typography variant="body2" color="text.secondary">Sort by date modified</Typography>
           <IconButton onClick={handleSortByDate} size="small" sx={{ ml: 0.5 }}>
             {sortOrder === 'asc' ? <ArrowUpwardIcon fontSize="inherit" /> : <ArrowDownwardIcon fontSize="inherit" />}
@@ -118,7 +117,7 @@ export default function FolderPresent({ folder, listView, selectedFileId, onFold
                 </ListItemIcon>
                 <ListItemText
                   primary={directory.name}
-                  secondary={showDetails ? getFolderDetails(directory) : null}
+                  secondary={getFolderDetails(directory)}
                 />
               </ListItemButton>
             </ListItem>
@@ -134,7 +133,7 @@ export default function FolderPresent({ folder, listView, selectedFileId, onFold
                 </ListItemIcon>
                 <ListItemText
                   primary={file.name}
-                  secondary={showDetails ? `${file.size} • Modified ${file.dateModified}` : null}
+                  secondary={`${file.size} • Modified ${file.dateModified}`}
                 />
               </ListItemButton>
             </ListItem>
@@ -151,11 +150,9 @@ export default function FolderPresent({ folder, listView, selectedFileId, onFold
                       {getFolderIcon('default', 'large')}
                       <Typography variant="subtitle1" noWrap>{directory.name}</Typography>
                     </Box>
-                    {showDetails && (
-                      <Typography variant="body2" color="text.secondary">
-                        {getFolderDetails(directory)}
-                      </Typography>
-                    )}
+                    <Typography variant="body2" color="text.secondary">
+                      {getFolderDetails(directory)}
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -176,11 +173,9 @@ export default function FolderPresent({ folder, listView, selectedFileId, onFold
                       {getFileIcon(file.fileType, 'large')}
                       <Typography variant="subtitle1" noWrap>{file.name}</Typography>
                     </Box>
-                    {showDetails && (
-                      <Typography variant="body2" color="text.secondary">
-                        {file.size} • Modified {file.dateModified}
-                      </Typography>
-                    )}
+                    <Typography variant="body2" color="text.secondary">
+                      {file.size} • Modified {file.dateModified}
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
