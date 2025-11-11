@@ -44,6 +44,94 @@
               "fileType": "Application/msi",
               "size": "12.3 MB",
               "dateModified": "2025-11-11"
+            },
+            {
+              "id": "doc_001",
+              "name": "MeetingNotes.docx",
+              "entryType": "file",
+              "fileType": "Document/word",
+              "size": "0.1 MB",
+              "dateModified": "2025-11-11"
+            },
+            {
+              "id": "doc_002",
+              "name": "Financial_Summary.xlsx",
+              "entryType": "file",
+              "fileType": "Document/excel",
+              "size": "0.5 MB",
+              "dateModified": "2025-11-01"
+            },
+            {
+              "id": "doc_003",
+              "name": "React_Cheatsheet.pdf",
+              "entryType": "file",
+              "fileType": "Document/pdf",
+              "size": "0.3 MB",
+              "dateModified": "2025-09-15"
+            },
+            {
+              "id": "doc_004",
+              "name": "Thesis_Final_Draft.docx",
+              "entryType": "file",
+              "fileType": "Document/word",
+              "size": "2.1 MB",
+              "dateModified": "2025-10-28"
+            },
+            {
+              "id": "doc_005",
+              "name": "Budget_2026.xlsx",
+              "entryType": "file",
+              "fileType": "Document/excel",
+              "size": "0.8 MB",
+              "dateModified": "2025-11-09"
+            },
+             {
+              "id": "mus_001",
+              "name": "Chill_Beats_Mix.mp3",
+              "entryType": "file",
+              "fileType": "Audio/mp3",
+              "size": "5.5 MB",
+              "dateModified": "2025-07-10"
+            },
+            {
+              "id": "mus_002",
+              "name": "Concert_Recording.wav",
+              "entryType": "file",
+              "fileType": "Audio/wav",
+              "size": "24.1 MB",
+              "dateModified": "2025-09-30"
+            },
+            {
+              "id": "mus_003",
+              "name": "Roadtrip_Anthems.aac",
+              "entryType": "file",
+              "fileType": "Audio/aac",
+              "size": "4.8 MB",
+              "dateModified": "2025-10-15"
+            },
+            {
+              "id": "vid_001",
+              "name": "Tutorial_React.mp4",
+              "entryType": "file",
+              "fileType": "Video/mp4",
+              "size": "150.2 MB",
+              "dateModified": "2025-11-01"
+            },
+            {
+              "id": "vid_002",
+              "name": "Family_Reunion.mov",
+              "entryType": "file",
+              "fileType": "Video/mov",
+              "size": "560.9 MB",
+              "dateModified": "2025-08-05"
+            },
+            {
+              "id": "vid_003",
+              "name": "Short_Film_Edit.mkv",
+              "entryType": "file",
+              "fileType": "Video/mkv",
+              "size": "1.2 GB",
+              "dateModified": "2025-11-10"
             }
           ]
         },
