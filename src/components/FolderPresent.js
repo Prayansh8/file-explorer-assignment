@@ -6,8 +6,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -75,8 +73,6 @@ export default function FolderPresent({ folder, selectedFileId, onFolderOpen, on
       </Box>
     );
   }
-
-
 
   return (
     <Box sx={{ flexGrow: 1 }}>
