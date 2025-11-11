@@ -1,0 +1,216 @@
+{
+  "id": "root",
+  "name": "This PC",
+  "entryType": "folder",
+  "children": [
+    {
+      "id": "drive_c",
+      "name": "OS (C:)",
+      "entryType": "folder",
+      "children": [
+        {
+          "id": "downloads",
+          "name": "Downloads",
+          "entryType": "folder",
+          "children": [
+            {
+              "id": "dwn_001",
+              "name": "Setup_VSCode_x64.exe",
+              "entryType": "file",
+              "fileType": "Application/exe",
+              "size": "78.2 MB",
+              "dateModified": "2025-10-25"
+            },
+            {
+              "id": "dwn_002",
+              "name": "ProjectReport.pdf",
+              "entryType": "file",
+              "fileType": "Document/pdf",
+              "size": "1.5 MB",
+              "dateModified": "2025-11-10"
+            },
+            {
+              "id": "dwn_003",
+              "name": "Ubuntu_24.04.iso",
+              "entryType": "file",
+              "fileType": "Disk Image/iso",
+              "size": "4.6 GB",
+              "dateModified": "2025-09-01"
+            },
+            {
+              "id": "dwn_004",
+              "name": "API_Client_Setup.msi",
+              "entryType": "file",
+              "fileType": "Application/msi",
+              "size": "12.3 MB",
+              "dateModified": "2025-11-11"
+            }
+          ]
+        },
+        {
+          "id": "documents",
+          "name": "Documents",
+          "entryType": "folder",
+          "children": [
+            {
+              "id": "doc_001",
+              "name": "MeetingNotes.docx",
+              "entryType": "file",
+              "fileType": "Document/word",
+              "size": "0.1 MB",
+              "dateModified": "2025-11-11"
+            },
+            {
+              "id": "doc_002",
+              "name": "Financial_Summary.xlsx",
+              "entryType": "file",
+              "fileType": "Document/excel",
+              "size": "0.5 MB",
+              "dateModified": "2025-11-01"
+            },
+            {
+              "id": "doc_003",
+              "name": "React_Cheatsheet.pdf",
+              "entryType": "file",
+              "fileType": "Document/pdf",
+              "size": "0.3 MB",
+              "dateModified": "2025-09-15"
+            },
+            {
+              "id": "doc_004",
+              "name": "Thesis_Final_Draft.docx",
+              "entryType": "file",
+              "fileType": "Document/word",
+              "size": "2.1 MB",
+              "dateModified": "2025-10-28"
+            },
+            {
+              "id": "doc_005",
+              "name": "Budget_2026.xlsx",
+              "entryType": "file",
+              "fileType": "Document/excel",
+              "size": "0.8 MB",
+              "dateModified": "2025-11-09"
+            }
+          ]
+        },
+        {
+          "id": "music",
+          "name": "Music",
+          "entryType": "folder",
+          "children": [
+            {
+              "id": "mus_001",
+              "name": "Chill_Beats_Mix.mp3",
+              "entryType": "file",
+              "fileType": "Audio/mp3",
+              "size": "5.5 MB",
+              "dateModified": "2025-07-10"
+            },
+            {
+              "id": "mus_002",
+              "name": "Concert_Recording.wav",
+              "entryType": "file",
+              "fileType": "Audio/wav",
+              "size": "24.1 MB",
+              "dateModified": "2025-09-30"
+            },
+            {
+              "id": "mus_003",
+              "name": "Roadtrip_Anthems.aac",
+              "entryType": "file",
+              "fileType": "Audio/aac",
+              "size": "4.8 MB",
+              "dateModified": "2025-10-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drive_d",
+      "name": "New Volume (D:)",
+      "entryType": "folder",
+      "children": [
+        {
+          "id": "pictures",
+          "name": "Pictures",
+          "entryType": "folder",
+          "children": [
+            {
+              "id": "pic_001",
+              "name": "Vacation_Beach.jpg",
+              "entryType": "file",
+              "fileType": "Image/jpeg",
+              "size": "4.2 MB",
+              "dateModified": "2025-08-20"
+            },
+            {
+              "id": "pic_002",
+              "name": "Design_Mockup.png",
+              "entryType": "file",
+              "fileType": "Image/png",
+              "size": "1.1 MB",
+              "dateModified": "2025-11-05"
+            },
+            {
+              "id": "pic_003",
+              "name": "Profile_Photo.jpg",
+              "entryType": "file",
+              "fileType": "Image/jpeg",
+              "size": "0.8 MB",
+              "dateModified": "2025-10-01"
+            },
+            {
+              "id": "pic_004",
+              "name": "Mountain_View.heic",
+              "entryType": "file",
+              "fileType": "Image/heic",
+              "size": "3.5 MB",
+              "dateModified": "2025-07-15"
+            },
+            {
+              "id": "pic_005",
+              "name": "Screenshot_2025_11_11.png",
+              "entryType": "file",
+              "fileType": "Image/png",
+              "size": "0.4 MB",
+              "dateModified": "2025-11-11"
+            }
+          ]
+        },
+        {
+          "id": "videos",
+          "name": "Videos",
+          "entryType": "folder",
+          "children": [
+            {
+              "id": "vid_001",
+              "name": "Tutorial_React.mp4",
+              "entryType": "file",
+              "fileType": "Video/mp4",
+              "size": "150.2 MB",
+              "dateModified": "2025-11-01"
+            },
+            {
+              "id": "vid_002",
+              "name": "Family_Reunion.mov",
+              "entryType": "file",
+              "fileType": "Video/mov",
+              "size": "560.9 MB",
+              "dateModified": "2025-08-05"
+            },
+            {
+              "id": "vid_003",
+              "name": "Short_Film_Edit.mkv",
+              "entryType": "file",
+              "fileType": "Video/mkv",
+              "size": "1.2 GB",
+              "dateModified": "2025-11-10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
