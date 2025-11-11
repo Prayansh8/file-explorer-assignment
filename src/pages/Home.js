@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -75,7 +74,7 @@ const buildFileSystemIndex = (root) => {
     firstFolder = root.id;
   }
 
-  return { map, firstFolder};
+  return { map, firstFolder };
 };
 
 const getFolderVariant = (node, map) => {
@@ -190,8 +189,7 @@ export default function Header() {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar position="fixed" open={open} sx={{ backgroundColor: "#1a3d60" }}>
         <Toolbar sx={{ gap: 2 }}>
           <IconButton
             color="inherit"
@@ -228,7 +226,7 @@ export default function Header() {
         </Toolbar>
       </AppBar>
 
-      <Main open={open}>
+      <Main open={open} >
         <DrawerHeader />
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <FolderPresent

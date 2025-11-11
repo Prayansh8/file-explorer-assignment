@@ -49,7 +49,7 @@ const sortFiles = (files, order) => {
 
 export default function FolderPresent({ folder, selectedFileId, onFolderOpen, onFileSelect }) {
   const [sortOrder, setSortOrder] = useState('desc');
-  const [listView, setListView] = React.useState(true);
+  const [listView, setListView] = React.useState(false);
 
   const entries = React.useMemo(() => {
     if (!folder || !Array.isArray(folder.children)) {
